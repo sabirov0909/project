@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ddd</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <div class="traffic-container" aria-label="Светофор" role="img">
+    <div class="light" data-color="red">
+      <div class="bulb red" id="red" aria-hidden="true"></div>
+    </div>
+
+    <div class="light" data-color="yellow">
+      <div class="bulb yellow" id="yellow" aria-hidden="true"></div>
+    </div>
+
+    <div class="light" data-color="green">
+      <div class="bulb green" id="green" aria-hidden="true"></div>
+    </div>
+  </div>
+
+  <div class="controls" aria-hidden="false">
+    <div class="row">
+      <button class="btn" id="nextBtn">Следующий</button>
+      <button class="btn" id="autoBtn">Авто: Вкл</button>
+    </div>
+    <div class="row">
+      <button class="btn secondary" id="stopBtn">Стоп</button>
+      <button class="btn" id="resetBtn">Сброс</button>
+    </div>
+    <div class="hint">Кликайте «Следующий», чтобы сменить свет вручную.<br>«Авто» — автопереключение каждые 2.5 с.</div>
+  </div>
+  <script src="script.js"></script>
+
+</body>
+</html>
